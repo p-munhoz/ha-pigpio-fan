@@ -1,0 +1,6 @@
+{
+  "name": "Pigpio PWM Fan",
+  "content_in_root": false,
+  "filename": "pigpio_fan",
+  "render_readme": true
+}

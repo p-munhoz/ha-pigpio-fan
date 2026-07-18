@@ -1,0 +1,11 @@
+{
+  "domain": "pigpio_fan",
+  "name": "Pigpio PWM Fan",
+  "version": "1.0.0",
+  "documentation": "https://github.com/p-munhoz/ha-pigpio-fan",
+  "issue_tracker": "https://github.com/p-munhoz/ha-pigpio-fan/issues",
+  "codeowners": ["@p-munhoz"],
+  "requirements": ["pigpio==1.78"],
+  "iot_class": "local_polling",
+  "config_flow": false
+}
