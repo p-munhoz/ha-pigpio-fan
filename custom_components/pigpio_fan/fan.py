@@ -69,7 +69,11 @@ def setup_platform(
 class PigpioPwmFan(FanEntity):
     """Representation of a PWM-controlled fan driven by pigpio."""
 
-    _attr_supported_features = FanEntityFeature.SET_SPEED
+    _attr_supported_features = (
+        FanEntityFeature.SET_SPEED
+        | FanEntityFeature.TURN_ON
+        | FanEntityFeature.TURN_OFF
+    )
     _attr_should_poll = False
 
     def __init__(self, pi: pigpio.pi, config: dict) -> None:
